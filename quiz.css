@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  background: linear-gradient(135deg, #63BF67 0%, #E8F9DF 100%);
+  font-family: Arial, sans-serif;
+  padding: 30px 20px;
+  min-height: 100vh;
+}
+ 
+h1 {
+  color: #3B743E;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 1.7rem;
+}
+ 
+.perg {
+  background: #ffffff;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 500px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  line-height: 2;
+  color: #2F5F32;
+}
+ 
+.perg p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #3B743E;
+}
+ 
+button {
+  background: #63BF67;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  margin: 25px auto;
+  transition: background 0.3s;
+}
+ 
+button:hover {
+  background: #52A856;
+}
+ 
+#res {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #3B743E;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.revelar {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+.revelar.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
