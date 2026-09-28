@@ -57,7 +57,7 @@ header a {
 }
 
 main {
-  padding: 120px 32px 28px;
+  padding: 120px 32px 40px;
 }
 
 .conteudo {
@@ -67,6 +67,7 @@ main {
   grid-template-columns: 320px minmax(560px, 1fr) 320px;
   gap: 28px;
   align-items: start;
+  justify-content: center;
 }
 
 .side {
@@ -127,8 +128,8 @@ main {
   width: 100%;
   height: 95px;
   resize: none;
-  margin-bottom: 12px;
-  padding: 12px 14px;
+  margin-bottom: 10px;
+  padding: 14px;
   border: 2px solid #cfe0d1;
   border-radius: 12px;
   background: #fbfefb;
@@ -137,19 +138,9 @@ main {
   outline: none;
 }
 
-.nome:focus,
-.bio:focus {
-  border-color: #215a3a;
-  box-shadow: 0 0 0 3px rgba(33, 90, 58, 0.12);
-}
-
+.bio::placeholder,
 .nome::placeholder {
   font-size: 18px;
-  color: #6c766f;
-}
-
-.bio::placeholder {
-  font-size: 17px;
   color: #6c766f;
 }
 
@@ -158,27 +149,45 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
+}
+
+
+.btn2 {
+    min-height: 42px;
+    padding: 8px;
+    font-size: 12px;
+    background: #ffffff;
+    color: #215a3a;
+    border: 1px solid #215a3a;
+    transition: 0.2s;
+}
+
+.btn1 {
+    min-height: 42px;
+    padding: 8px;
+    font-size: 12px;
+    background: #215a3a;
+    color: #ffffff;
+    border: 1px solid #215a3a;
+    transition: 0.2s;
+}
+
+.btn2:active {
+    background-color: #14402b;
+    color: #ffffff;
+}
+
+.btn1:active {
+    background-color: #fff;
+    color: #14402b;
 }
 
 .btn1,
 .btn2 {
-  width: 100%;
-  min-height: 44px;
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid #215a3a;
-  background: #ffffff;
-  color: #215a3a;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
+  border-radius: 40px;
 }
 
-.btn1:hover,
-.btn2:hover {
-  background: #eef6ef;
-}
 
 .cards {
   width: 100%;
@@ -205,6 +214,9 @@ main {
   background: #edf6ee;
 }
 
+
+/**/
+
 .recente {
   width: 100%;
 }
@@ -217,15 +229,13 @@ main {
 
 .card1 {
   margin-bottom: 18px;
-}
-
-.art1 {
   width: 100%;
   background-color: white;
   border-radius: 20px;
   padding: 14px;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
+
 
 .topocard1 {
   display: flex;
@@ -264,88 +274,20 @@ main {
 .acoes {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 
 .acoes button {
   border: none;
   background: transparent;
-  color: #333333;
+  color: #637c6c;
   font-size: 30px;
   cursor: pointer;
 }
 
 .acoes button:hover {
   opacity: 0.8;
-}
-
-
-main {
-    padding: 120px 32px 40px;
-}
-
-.conteudo {
-    max-width: 1250px;
-    grid-template-columns: 240px minmax(0, 500px) 260px;
-    justify-content: center;
-    gap: 44px;
-}
-
-.usuario {
-    padding: 20px;
-}
-
-.usuario img {
-    width: 90px;
-    height: 90px;
-    min-width: 90px;
-    min-height: 90px;
-    flex-shrink: 0;
-}
-
-.nome {
-    height: 42px;
-    font-size: 15px;
-}
-
-.bio {
-    height: 78px;
-    font-size: 14px;
-}
-
-.nome::placeholder,
-.bio::placeholder {
-    font-size: 18px;
-}
-
-.btn2 {
-    min-height: 42px;
-    padding: 8px;
-    font-size: 12px;
-    background: #ffffff;
-    color: #215a3a;
-    border: 1px solid #215a3a;
-    transition: 0.2s;
-}
-
-.btn1 {
-    min-height: 42px;
-    padding: 8px;
-    font-size: 12px;
-    background: #215a3a;
-    color: #ffffff;
-    border: 1px solid #215a3a;
-    transition: 0.2s;
-}
-
-.btn2:active {
-    background-color: #14402b;
-    color: #ffffff;
-}
-
-.btn1:active {
-    background-color: #fff;
-    color: #14402b;
 }
 
 .receitassalvas button {
@@ -361,10 +303,7 @@ main {
 
 .card1 {
     margin-bottom: 26px;
-}
-
-.art1 {
-    padding: 14px;
+    padding: 12px;
 }
 
 .topocard1 p {
@@ -387,10 +326,8 @@ main {
     font-size: 22px;
 }
 
-.novidades {
-    padding: 20px;
-}
 
+/**/
 .recotitulo {
     margin-bottom: 16px;
     font-size: 20px;
@@ -427,8 +364,7 @@ main {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  
+  gap: 10px;
 }
 
 .recoitem {
@@ -438,26 +374,29 @@ main {
   padding: 12px;
 }
 
-.recoitem h4 {
-  font-size: 27px;
+.recoitem h3 {
+  font-size: 18px;
   color: #153f2b;
   margin-bottom: 5px;
 }
 
 .recoitem p {
-  font-size: 20px;
+  font-size: 15px;
   color: #4e6656;
   margin-bottom: 10px;
+  line-height: 1.2;
 }
 
+.recoitem a,
 .recoitem button {
-  min-height: 40px;
-  padding: 8px 12px;
+  display: inline-block;
+  min-height: auto;
+  padding: 6px 9px;
   border-radius: 10px;
   border: 1px solid #215a3a;
   background: #ffffff;
   color: #215a3a;
-  font-size: 19px;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -467,5 +406,6 @@ main {
 
 
 .novo {
+  text-decoration: none;
 
 }
