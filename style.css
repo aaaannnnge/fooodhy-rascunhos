@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0;
+    background-color: #f2f8f2;
+    color: #1B5E20;
+    font-family: Arial, sans-serif;
+}
+ 
+header {
+    background-color: #1B5E20;
+    color: white;
+    padding: 25px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.title {
+    font-size: 30px;
+    margin: 0;
+}
+ 
+.top-left-container {
+    display: flex;
+    gap: 10px;
+}
+ 
+.btn {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.btn:hover {
+    cursor: pointer;
+}
+ 
+ 
+body > div {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+ 
+body > div img {
+    width: 100%;
+    max-width: 1100px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+ 
+body > div h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+ 
+body > div p {
+    color: #ffffff;
+    font-size: 17px;
+}
+ 
+ 
+ 
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+ 
+ 
+.card1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    padding: 10px;
+    background-color: #E8F5E9;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+.card1a{
+     display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    padding: 10px;
+    background-color: #C8E6C9;
+    border-radius: 12px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+.card1b{
+     display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    padding: 10px;
+    background-color: #A5D6A7;
+    border-radius: 12px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+.card1a:hover,
+.card1b:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+ 
+ 
+.card1 p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+ 
+ 
+.container > h2 {
+    color: #3B743E;
+    font-weight: 100;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+ 
+.container > p {
+    color: #000000;
+}
+ 
+ 
+.card2,
+.card2b,
+.card2s,
+.card3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+    height: 110px;
+    margin: 0.7%;
+    padding: 30px 10px;
+    border-radius: 15px;
+    text-align: right;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+ 
+.card2 {
+    background-image: url('Tigela\ com\ frutas.png');
+ 
+}
+ 
+.card2 h3 {
+    color: #ffffff;
+}
+ 
+.card2b {
+    background-image: url('bebidas.png');
+}
+ 
+.card2b h3 {
+    color: white;
+}
+ 
+ 
+.card2s {
+    background-image: url('poke.png');
+}
+ 
+.card2s h3 {
+    color: white;
+}
+ 
+ 
+.card3 {
+    background-image: url('coração.png');
+}
+ 
+.card3 h3 {
+    color: white;
+}
+ 
+ 
+.card1:hover,
+.card2:hover,
+.card2b:hover,
+.card2s:hover,
+.card3:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+ 
+ 
+.card4 {
+    background-color: #E8F5E9;
+    color: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+ 
+.card4 h2 {
+    color: #006705;
+}
+ 
+.card4 p {
+    color: #000000;
+}
+ 
+.card4 button {
+    background-color: #006705;
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+}
+ 
+.card4 button:hover {
+    background-color: #E8F5E9;
+    cursor: pointer;
+}
+ 
+ 
+.card5 {
+    background:
+    linear-gradient(
+        90deg,
+        #81C784 0%,
+        #76B678 54%,
+        #107413 96%
+    );
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 20px;
+    border: 2px solid #65A569;
+    text-align: left;
+    box-shadow: 0 4px 10px #6f6f6f;
+}
+ 
+.card5 h2 {
+    color: #ffffff;
+}
+ 
+.card5 p {
+    color: #ffffff;
+}
+ 
+.card5 button {
+    background-color: #A5D6A7;
+    color: #000000;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+}
+ 
+.card5 button:hover {
+    background-color: #63BF67;
+    cursor: pointer;
+}
