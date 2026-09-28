@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz FOOODHY</title>
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+ 
+<h1>FOOODHY pergunta, e você responde</h1>
+ 
+        <div class="perg">
+<p>1. Qual alimento é conhecido por fornecer gorduras consideradas benéficas à alimentação?</p>
+    <input type="radio" name="q1" value="c"> abacate<br>
+    <input type="radio" name="q1"> batata frita<br>
+    <input type="radio" name="q1"> bacon<br>
+    </div>
+  
+        <div class="perg">
+<p>2. Qual é uma opção de lanche com boa combinação de nutrientes?</p>
+<input type="radio" name="q2" value="c"> iorgute natural com frutas e aveias<br>
+<input type="radio" name="q2"> cuscus com salsicha<br>
+<input type="radio" name="q2">tapioca recheada com sementes de gergilim<br>
+        </div>
+ 
+        <div class="perg">
+<p>3. almoço completo tem que ter</p>
+    <input type="radio" name="q3"> arroz, proteina e Refrigerante<br>
+    <input type="radio" name="q3"> vitaminas, aguá, Carboidrato e salsicha<br>
+    <input type="radio" name="q3" value="c"> Carboidrato, proteina, lipidios e vitaminas<br>
+        </div>
+ 
+ 
+        <div class="perg">
+<p>4. Carboidrato saudável?</p>
+    <input type="radio" name="q4" value="c"> Aveia<br>
+    <input type="radio" name="q4"> Pão branco<br>
+    <input type="radio" name="q5"> macarrão<br>
+        </div>
+ 
+ 
+        <div class="perg">
+<p>5. Bom hábito?</p>
+    <input type="radio" name="q5">ficar jogando e não tomar água<br>
+    <input type="radio" name="q5">Pular refeição<br>
+    <input type="radio" name="q5" value="c">comer uma variedade de coisas saudável durante o dia<br>
+         </div>
+ 
+ 
+<button onclick="ver()">Ver Resultado </button>
+        <div id="res"></div>
+ 
+<script>
+function ver(){
+let p=0
+for(let i=1;i<=5;i++){
+const r=document.querySelector(`input[name="q${i}"]:checked`)
+if(r&&r.value==="c")p++
+}
+let t=p===5?" Parabéns!":p>=3?` ${p}/5 acertos`:` ${p}/5, estude mais`
+document.getElementById("res").innerText=t
+}
+</script>
+    
+        <div id="cursor-customizado"></div>
+
+</body>
+</html>
