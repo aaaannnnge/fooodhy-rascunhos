@@ -78,8 +78,15 @@ main {
   grid-column: 2;
 }
 
-.novidades {
+.tercoluna {
   grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.novidades {
+  grid-column: auto;
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
@@ -405,7 +412,36 @@ main {
 }
 
 
-.novo {
-  text-decoration: none;
 
+.criar {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  padding: 18px;
+}
+
+.criar .texto {
+  border: 1px solid #cfe0d1;
+  border-radius: 14px;
+  background: #f7fbf7;
+  padding: 16px;
+}
+
+.texto:hover {
+  cursor: pointer;
+  background: #eef6ef;
+}
+
+.texto h3 {
+    margin-bottom: 7px;
+    color: #153f2b;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.texto p {
+    color: #4e6656;
+    font-size: 15px;
+    line-height: 1.4;
 }
