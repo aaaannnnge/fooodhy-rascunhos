@@ -5,9 +5,10 @@
     text-decoration: none;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
 }
+
 header {
     position: fixed;
     top: 0;
@@ -57,7 +58,7 @@ header a {
 body {
     margin: 0;
     min-height: 100vh;
-    background: url('https://i.pinimg.com/1200x/b8/2c/86/b82c86a3ad1ae42c3e89b8a10a87118f.jpg') no-repeat fixed;
+    background: url('https://www.stockvault.net/data/2025/03/03/312851/thumb16.jpg') no-repeat fixed;
     background-position: center;
     background-size: cover;
 }
@@ -87,12 +88,13 @@ main {
 }
 
 .card {
+    color: #ffffff;
     width: 100%;
     max-width: 560px;
     border-radius: 30px;
-    background: rgba(48, 41, 41, 0.24);
+    background: rgba(8, 9, 8, 0.24);
     backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, 0.26);
+    border: 1px solid rgba(45, 38, 38, 0.26);
     -webkit-backdrop-filter: blur(18px);
     box-shadow: 0 15px 40px rgba(15, 48, 29, 0.18);
     text-align: center;
@@ -177,7 +179,7 @@ main {
 
 .card a,
 .card a:visited {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .card a:hover {
