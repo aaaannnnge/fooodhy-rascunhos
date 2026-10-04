@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Preferências Fooodhy</title>
+    <title> Meio Fooodhy</title>
 
     <style>
-        
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
         * {
     margin: 0;
     padding: 0;
@@ -38,7 +39,7 @@ header a {
 body {
     min-height: 100vh;
     background: #f4fbf4;
-    font-family: Arial, sans-serif;
+    font-family: 'Manrope', sans-serif;
     color: #1b1b1b;
 }
 
@@ -113,6 +114,22 @@ main {
 .btn2:hover {
     background: #eef6ef;
     border-color: #215a3a;
+}
+
+.card {
+    animation: entrada-card 0.7s ease-out both;
+}
+
+@keyframes entrada-card {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
     </style>
